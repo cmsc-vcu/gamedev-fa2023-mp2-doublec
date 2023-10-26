@@ -35,7 +35,7 @@ public class FallingPlatform : MonoBehaviour
         yield return new WaitForSeconds(destroyDelay);
 
         // Reset the platform's position and Rigidbody.
-        rb.bodyType = RigidbodyType2D.Static;
-        transform.position = originalPosition;
+        // rb.bodyType = RigidbodyType2D.Static;
+        // transform.position = originalPosition;
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UnlockWallJump : MonoBehaviour
 {
+    [SerializeField] GameObject canvasUI;
     bool used;
     // Start is called before the first frame update
     void Start()
@@ -20,10 +21,20 @@ public class UnlockWallJump : MonoBehaviour
         if(_collision.CompareTag("Player") && !used)
         {
             used = true;
-            PlayerMovement2.unlockedWallJump = true;
-
-            Destroy(gameObject);
+            StartCoroutine(ShowUI());
 
         }
+    }
+
+    IEnumerator ShowUI()
+    {
+        yield return new WaitForSeconds(0.5f);
+        
+        canvasUI.SetActive(true);
+
+        yield return new WaitForSeconds(4f);
+        PlayerMovement2.unlockedWallJump = true;
+        canvasUI.SetActive(false);
+        Destroy(gameObject);
     }
 }

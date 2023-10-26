@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f5cb2fbd3425b9d418db36fc2a09b13c
+  - enabled: 1
     path: Assets/Scenes/PrisonLevelOne.unity
     guid: aec60cdf69d4ddc4c9fab4842c1551eb
   - enabled: 1
     path: Assets/Scenes/PrisonLevelTwo.unity
     guid: d6fd7481b83f23448a606f94584296a5
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 12422eab014c1564b95582f2f97741d9
   m_configObjects: {}
