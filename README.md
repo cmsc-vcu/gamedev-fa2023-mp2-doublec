@@ -2,7 +2,7 @@
 
 Plight of the Prisoner
 
-Game Link:
+Game Link: <https://play.unity.com/mg/other/project-2-game-dev-october-26-1>
 
 Controls:
 WASD for movement left and right, SPACE for jump. 
